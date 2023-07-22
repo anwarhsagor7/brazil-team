@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url(./background.jpg);
+}
+
+.menu-bar {
+  background: #000;
+  font-weight: bold;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-bar {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu li {
+  position: relative;
+}
+
+.main-menu li a {
+  color: aliceblue;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+.main-menu li a:hover {
+  background-color: limegreen;
+}
+
+.sub-menu1 {
+  display: none;
+  position: relative;
+  z-index: 2;
+}
+
+.main-menu li:hover .sub-menu1 {
+  display: block;
+  position: absolute;
+  background: limegreen;
+  width: 170px;
+  text-align: center;
+}
+
+.sub-menu1 li a:hover {
+  background: #000;
+}
+
+.sub-menu2 {
+  display: none;
+}
+
+.sub-menu1 li:hover .sub-menu2 {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 150px;
+  text-align: center;
+  top: 0;
+  left: 170px;
+}
+
+.sub-menu2 li a:hover {
+  background-color: limegreen;
+}
+
+.mainbox {
+  background-color: lightgreen;
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+
+.middle-line {
+  background-color: aliceblue;
+  width: 2px;
+  height: 600px;
+  position: absolute;
+  left: 499px;
+}
+
+.middle-circle1 {
+  background-color: aliceblue;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 425px;
+  top: 225px;
+  border-radius: 50%;
+}
+
+.middle-circle2 {
+  background-color: lightgreen;
+  width: 146px;
+  height: 146px;
+  position: absolute;
+  left: 427px;
+  top: 227px;
+  border-radius: 50%;
+}
+
+.goalbar-left1 {
+  background-color: aliceblue;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 150px;
+}
+
+.goalbar-left3 {
+  background-color: aliceblue;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 250px;
+}
+
+.goalbar-left2 {
+  background-color: lightgreen;
+  width: 198px;
+  height: 296px;
+  position: absolute;
+  top: 152px;
+}
+
+.goalbar-left4 {
+  background-color: lightgreen;
+  width: 48px;
+  height: 96px;
+  position: absolute;
+  top: 252px;
+}
+
+.goalbar-right1 {
+  background-color: aliceblue;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 150px;
+  left: 800px;
+}
+
+.goalbar-right3 {
+  background-color: aliceblue;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 250px;
+  left: 950px;
+}
+
+.goalbar-right2 {
+  background-color: lightgreen;
+  width: 198px;
+  height: 296px;
+  position: absolute;
+  top: 152px;
+  left: 802px;
+}
+
+.goalbar-right4 {
+  background-color: lightgreen;
+  width: 48px;
+  height: 96px;
+  position: absolute;
+  top: 252px;
+  left: 952px;
+}
+
+.dbox1 {
+  background-color: aliceblue;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 255px;
+  left: 150px;
+  border-radius: 50%;
+}
+
+.dbox2 {
+  background-color: lightgreen;
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  top: 257px;
+  left: 152px;
+  border-radius: 50%;
+}
+
+.line1 {
+  background-color: aliceblue;
+  width: 2px;
+  height: 86px;
+  position: absolute;
+  left: 198px;
+  top: 257px;
+}
+
+.box1 {
+  background-color: lightgreen;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 108px;
+  top: 255px;
+}
+
+.dbox3 {
+  background-color: aliceblue;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 255px;
+  right: 150px;
+  border-radius: 50%;
+}
+
+.dbox4 {
+  background-color: lightgreen;
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  top: 257px;
+  right: 152px;
+  border-radius: 50%;
+}
+
+.line2 {
+  background-color: aliceblue;
+  width: 2px;
+  height: 86px;
+  position: absolute;
+  right: 198px;
+  top: 257px;
+}
+
+.box2 {
+  background-color: lightgreen;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  right: 108px;
+  top: 255px;
+}
+.gk {
+  position: absolute;
+  top: 278.5px;
+  left: 30px;
+}
+
+.def1 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.def2 {
+  position: absolute;
+  bottom: 200px;
+  left: 200px;
+}
+
+.def3 {
+  position: absolute;
+  left: 275px;
+  top: 125px;
+}
+
+.def4 {
+  position: absolute;
+  left: 275px;
+  bottom: 125px;
+}
+
+.mid1 {
+  position: absolute;
+  top: 200px;
+  left: 375px;
+}
+
+.mid2 {
+  position: absolute;
+  bottom: 200px;
+  left: 375px;
+}
+
+.mid3 {
+  position: absolute;
+  left: 478.5px;
+  top: 278.5px;
+}
+
+.wing1 {
+  position: absolute;
+  top: 150px;
+  left: 645px;
+}
+
+.wing2 {
+  position: absolute;
+  bottom: 150px;
+  left: 645px;
+}
+
+.cf {
+  position: absolute;
+  left: 735px;
+  top: 278.5px;
+}
+
+.heading {
+  width: 20%;
+  background: lightslategray;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  color: lime;
+}
+
+.yellow {
+  color: yellow;
+}
